@@ -1,109 +1,11 @@
-# Junção Automática de Planilhas Excel
+Junção Automática de Planilhas Excel — 
 
-## 📌 Descrição
+Este projeto automatiza a junção de duas planilhas Excel, reduzindo trabalho manual repetitivo. Por meio de uma interface gráfica simples, o usuário seleciona os arquivos, e o sistema gera uma nova planilha consolidada.
 
-Este projeto foi criado para **automatizar a junção de duas planilhas do Excel**, eliminando um trabalho manual repetitivo. O script permite que o usuário selecione os arquivos por meio de uma interface gráfica simples e gera uma nova planilha consolidada como resultado.
+O código utiliza Python com Pandas para leitura, tratamento e junção dos dados, e Tkinter para interação com o usuário. A junção é feita com base em uma coluna em comum, e o programa possui tratamento de erros, informando problemas ao usuário quando necessário.
 
-A ferramenta é ideal para cenários em que duas planilhas possuem dados complementares (por exemplo, cadastro + informações adicionais) e precisam ser combinadas com frequência.
+⚠️ Aviso: o script foi desenvolvido para um caso específico e pode exigir adaptação para outros formatos de planilhas.
 
----
+Principais benefícios: economia de tempo, redução de erros manuais e padronização do processo.
 
-## 🛠️ Tecnologias Utilizadas
-
-* **Python**
-* **Pandas** – manipulação e tratamento de dados
-* **Tkinter** – interface gráfica para seleção de arquivos e mensagens
-* **OpenPyXL / Excel** – leitura e escrita de arquivos `.xlsx`
-
----
-
-## ⚙️ Funcionamento Geral
-
-1. O programa abre uma **janela gráfica** para o usuário.
-2. O usuário seleciona:
-
-   * A **primeira planilha Excel**
-   * A **segunda planilha Excel**
-3. O código:
-
-   * Lê os arquivos utilizando o Pandas
-   * Trata possíveis valores vazios ou incompatíveis
-   * Realiza a **junção das planilhas** com base em uma coluna em comum
-4. Um novo arquivo Excel é gerado com os dados consolidados.
-5. Uma mensagem informa se o processo foi concluído com sucesso ou se ocorreu algum erro.
-
----
-
-## 🔗 Lógica da Junção
-
-* As planilhas são carregadas com `pandas.read_excel()`
-* A junção é feita utilizando `pandas.merge()`
-
-
-## 🧠 Tratamento de Erros
-
-O código possui validações para:
-
-* Arquivo não selecionado
-* Arquivo inválido ou corrompido
-* Colunas incompatíveis
-* Conversão incorreta de tipos de dados
-
-Em caso de erro, o usuário é notificado através de uma **messagebox**.
-
----
-
-## 📂 Estrutura do Processo
-
-```text
-Usuário
-  ↓
-Seleciona planilhas (Tkinter)
-  ↓
-Leitura dos dados (Pandas)
-  ↓
-Tratamento e junção
-  ↓
-Geração do novo Excel
-```
-
----
-
-## 🚀 Benefícios
-
-* Economia de tempo
-* Redução de erros manuais
-* Processo padronizado
-* Fácil de usar, mesmo sem conhecimento técnico
-
----
-
-## ▶️ Como Usar
-
-1. Execute o script Python
-2. Selecione as duas planilhas solicitadas
-3. Aguarde o processamento
-4. Abra o arquivo Excel gerado
-
----
-
-## 📌 Observações
-
-* As planilhas devem estar fechadas antes da execução
-* Recomenda-se manter os nomes das colunas padronizados
-* O script pode ser convertido em `.exe` usando **PyInstaller**
-
----
-
-
-Projeto desenvolvido para automatizar tarefas repetitivas e facilitar o fluxo de trabalho com planilhas Excel.
-
----
-
-Se necessário, o código pode ser facilmente adaptado para juntar mais planilhas ou aplicar filtros adicionais.
-
-
-
-
-
-* README escrito pelo CHATGPT
+README escrito pelo CHATGPT
